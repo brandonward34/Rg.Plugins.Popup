@@ -7,7 +7,7 @@
         <authors>Brandon Ward</authors>
         <owners>Castatus, Inc.</owners>
         <projectUrl>https://github.com/brandonward34/Rg.Plugins.Popup</projectUrl>
-        <iconUrl>https://github.com/pjaramillo77/CastatusCloud/blob/master/CastatusCloud/wwwroot/img/CastatusEmblem.png?raw=true</iconUrl>
+        <iconUrl>https://raw.githubusercontent.com/rotorgames/Rg.Plugins.Popup/master/icons/icon.png</iconUrl>
         <licenseUrl>https://github.com/rotorgames/Rg.Plugins.Popup/blob/master/LICENSE.md</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Plugin for Xamarin forms. Allows you to open any page as a popup. Forked from RG.Plugins.Popup
