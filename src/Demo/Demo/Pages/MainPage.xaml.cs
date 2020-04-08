@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Forms;
 
@@ -19,6 +21,16 @@ namespace Demo.Pages
             PopupNavigation.Instance.Popped += (sender, e) => Debug.WriteLine($"[Popup] Popped: {e.Page.GetType().Name}");
 
             _loginPopup = new LoginPopupPage();
+            var page = new LoginSuccessPopupPage();
+
+            Device.StartTimer(TimeSpan.FromSeconds(5), () =>
+            {
+
+                if (PopupNavigation.Instance.PopupStack.Contains(page))
+                     PopupNavigation.Instance.RemovePageAsync(page);
+                PopupNavigation.Instance.PushAsync(page);
+                return true;
+            });
         }
 
         private async void OnOpenPupup(object sender, EventArgs e)

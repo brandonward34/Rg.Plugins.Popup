@@ -14,6 +14,7 @@ namespace Rg.Plugins.Popup.IOS.Renderers
     [Preserve(AllMembers = true)]
     public class PopupPageRenderer : PageRenderer
     {
+
         private readonly UIGestureRecognizer _tapGestureRecognizer;
         private NSObject _willChangeFrameNotificationObserver;
         private NSObject _willHideNotificationObserver;
@@ -30,6 +31,7 @@ namespace Rg.Plugins.Popup.IOS.Renderers
             {
                 CancelsTouchesInView = false
             };
+
         }
 
         protected override void Dispose(bool disposing)
@@ -66,10 +68,8 @@ namespace Rg.Plugins.Popup.IOS.Renderers
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-
             ModalPresentationStyle = UIModalPresentationStyle.OverCurrentContext;
             ModalTransitionStyle = UIModalTransitionStyle.CoverVertical;
-
             View?.AddGestureRecognizer(_tapGestureRecognizer);
         }
 
@@ -83,9 +83,7 @@ namespace Rg.Plugins.Popup.IOS.Renderers
         public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
-
             UnregisterAllObservers();
-
             _willChangeFrameNotificationObserver = NSNotificationCenter.DefaultCenter.AddObserver(UIKeyboard.WillShowNotification, KeyBoardUpNotification);
             _willHideNotificationObserver = NSNotificationCenter.DefaultCenter.AddObserver(UIKeyboard.WillHideNotification, KeyBoardDownNotification);
         }
@@ -93,7 +91,6 @@ namespace Rg.Plugins.Popup.IOS.Renderers
         public override void ViewWillDisappear(bool animated)
         {
             base.ViewWillDisappear(animated);
-
             UnregisterAllObservers();
         }
 

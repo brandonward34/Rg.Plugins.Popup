@@ -55,7 +55,9 @@ namespace Rg.Plugins.Popup.IOS.Impl
             window.RootViewController = new PopupPlatformRenderer(renderer);
             window.RootViewController.View.BackgroundColor = Color.Transparent.ToUIColor();
             window.WindowLevel = UIWindowLevel.Normal;
-            window.MakeKeyAndVisible();
+
+            // window.MakeKeyAndVisible();
+            window.Hidden = false;
 
             if (!IsiOS9OrNewer)
                 window.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);

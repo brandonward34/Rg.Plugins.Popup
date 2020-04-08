@@ -17,7 +17,6 @@ namespace Rg.Plugins.Popup.IOS.Platform
 
         public PopupWindow()
         {
-
         }
 
         public override UIView HitTest(CGPoint point, UIEvent uievent)

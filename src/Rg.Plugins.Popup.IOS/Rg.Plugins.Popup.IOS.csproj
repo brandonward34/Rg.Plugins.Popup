@@ -67,6 +67,10 @@
     <Compile Include="Platform\PopupWindow.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Demo\Demo\Demo.csproj">
+      <Project>{E7C8D327-B800-4F8F-9CAD-6B90FB220D7C}</Project>
+      <Name>Demo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Rg.Plugins.Popup\Rg.Plugins.Popup.csproj">
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
       <Name>Rg.Plugins.Popup</Name>

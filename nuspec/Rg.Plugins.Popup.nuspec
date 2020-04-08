@@ -2,15 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Rg.Plugins.Popup</id>
-        <version>$version$</version>
+        <version>1.3.6</version>
         <title>Popup Page Plugin for Xamarin Forms</title>
-        <authors>Kirill Lyubimov</authors>
-        <owners>rotorgames</owners>
-        <projectUrl>https://github.com/rotorgames/Rg.Plugins.Popup</projectUrl>
-        <iconUrl>https://raw.githubusercontent.com/rotorgames/Rg.Plugins.Popup/master/icons/icon.png</iconUrl>
+        <authors>Brandon Ward</authors>
+        <owners>Castatus, Inc.</owners>
+        <projectUrl>https://github.com/brandonward34/Rg.Plugins.Popup</projectUrl>
+        <iconUrl>https://github.com/pjaramillo77/CastatusCloud/blob/master/CastatusCloud/wwwroot/img/CastatusEmblem.png?raw=true</iconUrl>
         <licenseUrl>https://github.com/rotorgames/Rg.Plugins.Popup/blob/master/LICENSE.md</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Plugin for Xamarin forms. Allows you to open any page as a popup.
+        <description>Plugin for Xamarin forms. Allows you to open any page as a popup. Forked from RG.Plugins.Popup
         
 Release Notes: https://github.com/rotorgames/Rg.Plugins.Popup/releases</description>
         <tags>Xamarin.Forms xamarin forms popup page modal</tags>
